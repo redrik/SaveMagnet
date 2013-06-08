@@ -1,0 +1,8 @@
+= form_for @magnet, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :url, :class => 'control-label'
+    .controls
+      = f.text_area :url, :rows => 5, :class => 'text_area', :class => "span10", :placeholder => 'Paste magnet list...'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), magnets_path, :class => 'btn'
