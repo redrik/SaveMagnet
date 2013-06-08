@@ -1,7 +1,8 @@
 class CreateMagnets < ActiveRecord::Migration
   def change
     create_table :magnets do |t|
-      t.string :url
+
+      t.text :url, :null => false
 
       t.references :user
 
