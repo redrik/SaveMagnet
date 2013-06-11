@@ -6,7 +6,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'unicorn'
-gem 'pg'
 
 gem "less-rails"
 gem 'haml-rails'

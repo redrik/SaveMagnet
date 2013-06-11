@@ -1,4 +1,7 @@
 class MagnetsController < ApplicationController
+
+  require 'uri'
+
   # GET /magnets
   # GET /magnets.json
 
