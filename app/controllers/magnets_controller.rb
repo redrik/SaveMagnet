@@ -93,4 +93,17 @@ class MagnetsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def delete_all
+
+    @magnets = current_user.magnets.all
+    @magnets.each do |magnet|
+      magnet.destroy
+    end    
+
+    respond_to do |format|
+      format.html { redirect_to magnets_url }
+      format.json { head :no_content }
+    end    
+  end
 end

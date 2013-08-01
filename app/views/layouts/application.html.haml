@@ -43,6 +43,7 @@
               %li.nav-header Menu
               %li= link_to "Add magnet list", new_magnet_path
               %li= link_to "View magnet list", magnets_path
+              %li= link_to "Delete all magnet link", delete_all_magnets_path, data: { confirm: 'Are you sure?' }
         .span9
           = bootstrap_flash
           = yield

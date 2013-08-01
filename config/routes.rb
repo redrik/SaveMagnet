@@ -2,10 +2,13 @@ Savemagnet::Application.routes.draw do
   
   devise_for :users 
   
-  resources :magnets
+  resources :magnets do
+    collection do
+      get 'delete_all'
+    end
+  end
 
   root :to => 'home#index'
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
