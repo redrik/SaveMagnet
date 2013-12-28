@@ -7,6 +7,7 @@ gem 'rails', '~>4.0.0'
 
 gem 'thin'
 
+gem 'protected_attributes'
 gem "less-rails"
 gem 'haml-rails'
 gem 'devise'
