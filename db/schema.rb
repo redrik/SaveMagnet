@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130601123110) do
 
   create_table "magnets", :force => true do |t|
-    t.string   "url"
+    t.text     "url",        :null => false
     t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

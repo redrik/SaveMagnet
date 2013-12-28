@@ -43,6 +43,7 @@
               %li.nav-header Menu
               %li= link_to "Add magnet list", new_magnet_path
               %li= link_to "View magnet list", magnets_path
+              %li= link_to "Delete all magnet link", delete_all_magnets_path, data: { confirm: 'Are you sure?' }
         .span9
           = bootstrap_flash
           = yield
@@ -53,4 +54,6 @@
       Javascripts
       \==================================================
     / Placed at the end of the document so the pages load faster
+    %script{:src=>"//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"}
+    %script{:src=>"//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"}
     = javascript_include_tag "application"
